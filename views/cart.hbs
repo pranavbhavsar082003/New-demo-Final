@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="text-center">Your Cart</h1>
+    {{#if message}}
+      <div class="alert alert-info text-center">{{message}}</div>
+    {{else}}
+    <div class="row">
+      {{#each nfts}}
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="{{this.imageUrl}}" class="card-img-top" alt="{{this.title}}">
+          <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <p class="card-text">{{this.description}}</p>
+            <p class="card-text">Price: ${{this.price}}</p>
+            <a href="/cart/edit/{{this._id}}" class="btn btn-primary">Edit</a>
+            <form action="/cart/delete/{{this._id}}" method="POST" style="display:inline;">
+              <button type="submit" class="btn btn-danger">Remove from Cart</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="text-center mt-4">
+      <form action="/cart/checkout" method="POST">
+        <button type="submit" class="btn btn-success">Checkout</button>
+      </form>
+      <a href="/nfts" class="btn btn-secondary mt-2">Back to NFT Collection</a>
+    </div>
+    {{/if}}
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
