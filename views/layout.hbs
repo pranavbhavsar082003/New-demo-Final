@@ -4,47 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{title}}</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">TokenVerse</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/nfts">NFT Collection</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/nfts/add">Create NFT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/cart">Cart</a>
-        </li>
-        {{#if user}}
-        <li class="nav-item">
-          <a class="nav-link" href="/auth/logout">Logout</a>
-        </li>
-        {{else}}
-        <li class="nav-item">
-          <a class="nav-link" href="/auth/login">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/auth/register">Register</a>
-        </li>
-        {{/if}}
-      </ul>
+  <!-- Header/Nav Section -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="/">TokenVerse</a>
+      </div>
+      <div class="navbar-menu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/nfts">NFT Collection</a></li>
+          <li><a href="/nfts/add">Create NFT</a></li>
+          <li><a href="/cart">Cart</a></li>
+          {{#if user}}
+          <li><a href="/auth/logout">Logout</a></li>
+          {{else}}
+          <li><a href="/auth/login">Login</a></li>
+          <li><a href="/auth/register">Register</a></li>
+          {{/if}}
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    {{{body}}}
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <span>© 2024 TokenVerse. All rights reserved.</span>
     </div>
-  </nav>
-  {{{body}}}
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </footer>
+
+  <script src="/scripts/main.js"></script>
 </body>
 </html>
