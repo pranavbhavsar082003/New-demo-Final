@@ -9,7 +9,6 @@ router.get('/', async (req, res) => {
   res.render('nfts', { nfts });
 });
 
-// Search NFTs by title
 router.get('/search', async (req, res) => {
   const query = req.query.q;
   const nfts = await NFT.find({ title: { $regex: query, $options: 'i' } });
