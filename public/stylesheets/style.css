@@ -1,4 +1,3 @@
-/* Reset & Typography */
 body,
 h1,
 h2,
@@ -9,11 +8,16 @@ li {
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+  color: rgb(85 131 117);
 }
 
 body {
   background-color: #f9f9f9;
   color: #333;
+}
+
+label{
+  color: rgb(85 131 117);
 }
 
 a {
@@ -23,7 +27,7 @@ a {
 
 .site-header,
 .site-footer {
-  background-color: #000;
+  background: linear-gradient(to right, #0d0b2c, #3a0e45);
   color: #fff;
   padding: 1rem 0;
 }
@@ -35,10 +39,18 @@ a {
 }
 
 .site-header .navbar-brand a {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.2 rem;
+  background: linear-gradient(to right, #7d3cff, #ff6b6b); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 500;
 }
 
+.navbar-brand {
+  font-size: 1.5rem;
+}
 .site-header .navbar-menu ul {
   list-style: none;
   display: flex;
@@ -49,10 +61,15 @@ a {
   font-size: 1rem;
   color: #fff;
   transition: color 0.3s;
+  padding-right: 50px;
 }
 
 .site-header .navbar-menu ul li a:hover {
-  color: #ccc;
+  background: linear-gradient(to right, #08abba, #ff3333); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .site-footer {
@@ -61,10 +78,20 @@ a {
   background-color: #000;
   color: #fff;
 }
+/* Gradient Text for TokenVerse */
+.tokenverse-gradient {
+  font-weight: bold;
+  background: linear-gradient(to right, #7d3cff, #ff6b6b); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 
 /* Main Content */
 main {
   padding: 2rem 0;
+  background: linear-gradient(to right, #0d0b2c, #3a0e45);
 }
 
 h1 {
@@ -85,7 +112,7 @@ p.card-text {
   color: #ff9900;
 }
 button.btn.btn-success {
-  margin-left: 15px;
+  margin-left: 7rem;
 }
 
 button.btn.btn-danger {
@@ -94,17 +121,196 @@ button.btn.btn-danger {
 a.btn.btn-primary {
   margin-left: 30px;
 }
+a.btn.btn-dark.mt-2 {
+  margin-left: 31rem;
+}
+/* Specific Primary Button Styling */
+a.btn.btn-primary.btn-lg {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    #7d3cff,
+    #ff6b6b
+  ); /* Gradient matching TokenVerse */
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s ease;
+  margin: 0.5rem;
+  border-radius: 20px;
+}
+
+/* Hover Effect for Primary Button */
+a.btn.btn-primary.btn-lg:hover {
+  transform: translateY(-3px); 
+  background: linear-gradient(
+    to right,
+    #8d4cff,
+    #ff7b7b
+  ); 
+}
+/* Specific Success Button Styling */
+a.btn.btn-success.btn-lg {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    #28a745,
+    #34d058
+  ); /* Gradient for Success button */
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s ease;
+  margin: 0.5rem;
+  border-radius: 20px;
+}
+
+/* Hover Effect for Success Button */
+a.btn.btn-success.btn-lg:hover {
+  transform: translateY(-3px); /* Slight lift effect on hover */
+  background: linear-gradient(
+    to right,
+    #2ecc71,
+    #48d86b
+  ); /* Slight color change for gradient on hover */
+}
+
+/* Specific Info Button Styling */
+a.btn.btn-info.btn-lg {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    #17a2b8,
+    #1bcddc
+  ); /* Gradient for Info button */
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s ease;
+  margin: 0.5rem;
+  border-radius: 20px;
+}
+
+/* Hover Effect for Info Button */
+a.btn.btn-info.btn-lg:hover {
+  transform: translateY(-3px); 
+  background: linear-gradient(
+    to right,
+    #1ec5d8,
+    #30d9f0
+  ); 
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #555; 
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto; 
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
+.jumbotron {
+  background-color: transparent;
+  padding: 0;
+}
+
+.jumbotron h1.display-4 {
+  font-size: 80px;
+  color: #ffffff;
+  margin-bottom: 5rem;
+  margin-top: 6rem;
+}
+
+.jumbotron p.lead {
+  font-size: 1.2rem;
+  color: rgb(85 131 117);
+  margin-bottom: 10rem;
+  margin-top: -4rem;
+}
+
+/* Button Styles */
+.jumbotron .btn-primary {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #7d3cff; 
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.jumbotron .btn-primary:hover {
+  background-color: #5a2bb8;
+}
+
+.jumbotron .btn-info {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #ff6b6b; 
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.jumbotron .btn-info:hover {
+  background-color: #ff3b3b;
+}
+
+.jumbotron .btn-success {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #38b4d0; 
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.jumbotron .btn-success:hover {
+  background-color: #2c8ca6;
+}
+/* Add this to your existing CSS file */
+
+/* Center the form-wrapper inside the container */
+.form-wrapper {
+  max-width: 400px; /* Control the maximum width of the form */
+  margin: 0 auto; /* Center the form-wrapper */
+  background-color: #101820FF; /* Background similar to your design */
+  padding: 20px; /* Add padding inside the form-wrapper */
+  border-radius: 8px; /* Rounded corners */
+  color: #FEE715FF; /* Text color */
+}
+
+/* Adjust the form controls to take full width */
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
 /* Container for Cards */
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Distribute cards evenly */
+  justify-content: space-between; 
 }
 
 /* Cards & Buttons */
@@ -124,8 +330,8 @@ a.btn.btn-primary {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   margin: 20px;
-  width: 350px; /* Increase width */
-  height: 625px; /* Increase height */
+  width: 350px; 
+  height: 625px; 
   transition: transform 0.3s ease;
 }
 
@@ -136,7 +342,7 @@ a.btn.btn-primary {
 /* Image container inside the card */
 .card img {
   width: 100%;
-  height: 70%; /* Adjust image height to fit within the card */
+  height: 70%; 
   object-fit: cover;
   border-bottom: 1px solid #333;
 }
@@ -205,12 +411,14 @@ a.btn.btn-primary {
 }
 
 .form-control {
-  width: 100%;
+  width: 100%; /* Use a full-width on smaller screens */
+  max-width: 500px; /* Set a maximum width for larger screens */
   padding: 0.75rem;
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
   margin-bottom: 1rem;
+  box-sizing: border-box; 
 }
 
 .text-center {
