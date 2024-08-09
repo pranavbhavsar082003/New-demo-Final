@@ -16,7 +16,7 @@ body {
   color: #333;
 }
 
-label{
+label {
   color: rgb(85 131 117);
 }
 
@@ -24,7 +24,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+html {
+  background: linear-gradient(to right, #0d0b2c, #3a0e45);
+}
 .site-header,
 .site-footer {
   background: linear-gradient(to right, #0d0b2c, #3a0e45);
@@ -40,7 +42,7 @@ a {
 
 .site-header .navbar-brand a {
   font-size: 1.2 rem;
-  background: linear-gradient(to right, #7d3cff, #ff6b6b); 
+  background: linear-gradient(to right, #7d3cff, #ff6b6b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -65,7 +67,7 @@ a {
 }
 
 .site-header .navbar-menu ul li a:hover {
-  background: linear-gradient(to right, #08abba, #ff3333); 
+  background: linear-gradient(to right, #08abba, #ff3333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -81,7 +83,7 @@ a {
 /* Gradient Text for TokenVerse */
 .tokenverse-gradient {
   font-weight: bold;
-  background: linear-gradient(to right, #7d3cff, #ff6b6b); 
+  background: linear-gradient(to right, #7d3cff, #ff6b6b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -146,12 +148,8 @@ a.btn.btn-primary.btn-lg {
 
 /* Hover Effect for Primary Button */
 a.btn.btn-primary.btn-lg:hover {
-  transform: translateY(-3px); 
-  background: linear-gradient(
-    to right,
-    #8d4cff,
-    #ff7b7b
-  ); 
+  transform: translateY(-3px);
+  background: linear-gradient(to right, #8d4cff, #ff7b7b);
 }
 /* Specific Success Button Styling */
 a.btn.btn-success.btn-lg {
@@ -175,12 +173,8 @@ a.btn.btn-success.btn-lg {
 
 /* Hover Effect for Success Button */
 a.btn.btn-success.btn-lg:hover {
-  transform: translateY(-3px); /* Slight lift effect on hover */
-  background: linear-gradient(
-    to right,
-    #2ecc71,
-    #48d86b
-  ); /* Slight color change for gradient on hover */
+  transform: translateY(-3px);
+  background: linear-gradient(to right, #2ecc71, #48d86b);
 }
 
 /* Specific Info Button Styling */
@@ -205,20 +199,16 @@ a.btn.btn-info.btn-lg {
 
 /* Hover Effect for Info Button */
 a.btn.btn-info.btn-lg:hover {
-  transform: translateY(-3px); 
-  background: linear-gradient(
-    to right,
-    #1ec5d8,
-    #30d9f0
-  ); 
+  transform: translateY(-3px);
+  background: linear-gradient(to right, #1ec5d8, #30d9f0);
 }
 
 .lead {
   font-size: 1.25rem;
-  color: #555; 
+  color: #555;
   margin-bottom: 1.5rem;
   max-width: 800px;
-  margin: 0 auto 1.5rem auto; 
+  margin: 0 auto 1.5rem auto;
 }
 .container {
   max-width: 1200px;
@@ -249,7 +239,7 @@ a.btn.btn-info.btn-lg:hover {
 .jumbotron .btn-primary {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  background-color: #7d3cff; 
+  background-color: #7d3cff;
   border: none;
   border-radius: 20px;
   transition: background-color 0.3s;
@@ -262,7 +252,7 @@ a.btn.btn-info.btn-lg:hover {
 .jumbotron .btn-info {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  background-color: #ff6b6b; 
+  background-color: #ff6b6b;
   border: none;
   border-radius: 20px;
   transition: background-color 0.3s;
@@ -275,7 +265,7 @@ a.btn.btn-info.btn-lg:hover {
 .jumbotron .btn-success {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  background-color: #38b4d0; 
+  background-color: #38b4d0;
   border: none;
   border-radius: 20px;
   transition: background-color 0.3s;
@@ -288,12 +278,12 @@ a.btn.btn-info.btn-lg:hover {
 
 /* Center the form-wrapper inside the container */
 .form-wrapper {
-  max-width: 400px; /* Control the maximum width of the form */
-  margin: 0 auto; /* Center the form-wrapper */
-  background-color: #101820FF; /* Background similar to your design */
-  padding: 20px; /* Add padding inside the form-wrapper */
-  border-radius: 8px; /* Rounded corners */
-  color: #FEE715FF; /* Text color */
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #101820ff;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fee715ff;
 }
 
 /* Adjust the form controls to take full width */
@@ -310,7 +300,7 @@ a.btn.btn-info.btn-lg:hover {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 /* Cards & Buttons */
@@ -330,8 +320,8 @@ a.btn.btn-info.btn-lg:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   margin: 20px;
-  width: 350px; 
-  height: 625px; 
+  width: 350px;
+  height: 625px;
   transition: transform 0.3s ease;
 }
 
@@ -342,7 +332,7 @@ a.btn.btn-info.btn-lg:hover {
 /* Image container inside the card */
 .card img {
   width: 100%;
-  height: 70%; 
+  height: 70%;
   object-fit: cover;
   border-bottom: 1px solid #333;
 }
@@ -411,14 +401,14 @@ a.btn.btn-info.btn-lg:hover {
 }
 
 .form-control {
-  width: 100%; /* Use a full-width on smaller screens */
-  max-width: 500px; /* Set a maximum width for larger screens */
+  width: 100%;
+  max-width: 500px;
   padding: 0.75rem;
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
   margin-bottom: 1rem;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .text-center {
