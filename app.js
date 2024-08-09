@@ -65,7 +65,7 @@ app.use(session({
   secret: 'secret',
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: true } // Use secure: true if using HTTPS
+  cookie: { secure: false } // Use secure: true if using HTTPS
 }));
 app.use(flash());
 app.use(passport.initialize());
