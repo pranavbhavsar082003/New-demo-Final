@@ -415,74 +415,61 @@ a.btn.btn-info.btn-lg:hover {
   text-align: center;
 }
 
-/* Mobile Styles */
+/* Hide the menu by default on mobile */
+.navbar-menu {
+  display: flex;
+}
+
+/* Add styles for the hamburger icon */
+.navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Hamburger icon appearance */
+.navbar-toggler-icon::before {
+  content: '☰'; /* Hamburger icon */
+}
+
+/* Mobile styles */
 @media (max-width: 576px) {
-  .site-header .navbar-menu ul {
+  .navbar-menu {
+    display: none; /* Hide menu by default */
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 0;
+    padding: 1rem;
   }
 
-  .site-header .navbar-menu ul li {
+  .navbar-menu.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .navbar-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-menu ul li {
     margin-bottom: 1rem;
   }
 
-  .site-header .navbar-menu ul li a {
-    padding-right: 0;
-    font-size: 0.9rem;
+  .navbar-menu ul li a {
+    color: #fff;
+    text-decoration: none;
   }
 
-  .site-header .navbar-brand a {
-    font-size: 1rem;
-  }
-
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 350px;
-  }
-
-  .form-wrapper {
-    max-width: 90%;
-    padding: 10px;
-  }
-
-  .jumbotron h1.display-4 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-
-  .jumbotron p.lead {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-  }
-
-  .container {
-    padding: 10px;
-  }
-
-  .btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  .card-content h3 {
-    font-size: 1.2rem;
-  }
-
-  .card-content p,
-  .card-content .price,
-  .card-content .highest-bid,
-  .card-content .username {
-    font-size: 1rem;
-  }
-
-  .card-content .time-remaining {
-    font-size: 0.8rem;
+  .navbar-toggler {
+    display: block;
   }
 }
