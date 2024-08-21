@@ -414,3 +414,75 @@ a.btn.btn-info.btn-lg:hover {
 .text-center {
   text-align: center;
 }
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+  .site-header .navbar-menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-header .navbar-menu ul li {
+    margin-bottom: 1rem;
+  }
+
+  .site-header .navbar-menu ul li a {
+    padding-right: 0;
+    font-size: 0.9rem;
+  }
+
+  .site-header .navbar-brand a {
+    font-size: 1rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .form-wrapper {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .jumbotron h1.display-4 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .jumbotron p.lead {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-content p,
+  .card-content .price,
+  .card-content .highest-bid,
+  .card-content .username {
+    font-size: 1rem;
+  }
+
+  .card-content .time-remaining {
+    font-size: 0.8rem;
+  }
+}
